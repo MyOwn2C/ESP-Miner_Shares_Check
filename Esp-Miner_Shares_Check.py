@@ -1,8 +1,10 @@
-# Version 0.1 Release
+# Version V0.2 Release
 
 import requests
 import time
 import subprocess
+
+IP = "Your_Bitaxe_IP_Address" # Replace with your Bitaxe IP address
 
 def get_shares_accepted(api_url):
     try:
@@ -17,13 +19,13 @@ def get_shares_accepted(api_url):
 def restart_bitaxe():
     try:
         # Execute the restart command
-        subprocess.run(["curl", "-X", "POST", "http://[YOUR_BITAXE_IP]/api/system/restart"], check=True) # Replace with your Bitaxe IP address
+        subprocess.run(["curl", "-X", "POST", "http://{IP}/api/system/restart"], check=True)
         print(" Bitaxe is restarting...")
     except subprocess.CalledProcessError as e:
         print(f"Failed to restart Bitaxe: {e}")
 
 if __name__ == "__main__":
-    api_url = "http://[YOUR_BITAXE_IP]/api/system/info"  # Replace with your Bitaxe IP address
+    api_url = "http://{IP}/api/system/info" 
     previous_shares = None # Setup inintal shares count
     restart_count = 0 # Keep count of how many times restart was triggered
 
