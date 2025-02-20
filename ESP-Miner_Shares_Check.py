@@ -31,6 +31,9 @@ if __name__ == "__main__":
 
     while True:
         shares_accepted_count = get_shares_accepted(api_url)
+
+        # Get current local time
+        current_time = time.strftime("%H:%M:%S", time.localtime())
         
         print(f"Current Shares Accepted: {shares_accepted_count}, Restart Count: {restart_count}")
         
