@@ -5,7 +5,7 @@ If the number of accepted shares are not increasing, it will restart the Bitaxe.
 
 It works with the latest version of ESP-miner from skot (https://github.com/skot/ESP-Miner)
 
-<img width="415" alt="image" src="https://github.com/user-attachments/assets/85282130-9df4-4b78-a3af-75eebf8a2807" />
+<img width="759" alt="image" src="https://github.com/user-attachments/assets/fdb15d34-bb25-4eec-8608-77053cf86972" />
 
 # How to install Python
 
